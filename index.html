@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medeaQuery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <title>MCMerryChristmas </title>
+</head>
+<body>
+    <div id="giftBox">
+        <h2>Click on present</h2>
+        <img src="https://www.freeiconspng.com/uploads/christmas-gift-icon-26.png" alt="" width="100px" id="present">
+    </div>
+    <section id="container">
+        <article>
+            <h1>MERRY CHRISTMAS</h1>
+              <!--the user name-->
+            <h2 id="userName"><span></span></h2>
+              <!--The christmas wishes-->
+              <p id="secretQuote" style="display: none;"> <span>Isaiah 9:6</span> - For us a child is born, to us a son is given; the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. <br>
+                <span>John 1:29</span> - Behold, the Lamb of God, who takes away the sin of the world!</p>
+        <!--from line-->
+        <aside>
+                  <!--secret message-->
+                  <blockquote>May you and your family have the most wonderful Christmas Day. May this day be filled with lots of joy, love and happiness. <br>
+                            We wish you a glittery, sparkly, joyous Christmas. May you feel the warmth of your family's love; and may peace and hope fill your life throughout the year.</blockquote>
+                  <h3>Best wishes from Mark & Chanté</h3>
+          <audio autoplay style="display: hidden;">
+                <source src="media/christmas-bells-intro-outro-10473.mp3" type="audio/mpeg">
+            </audio>
+        </aside>
+        </article>
+    </section>
+    <script>
+        const present = document.getElementById('present').addEventListener('click', function magic () {
+                const user = prompt('enter your name in text field');
+                if (user.length <= 1) {
+                    document.body.innerHTML = `<h2>606 ERROR</h2> <h3>No name was entered in the text field <br> please refresh page and enter your name</h3>`;
+                } else {
+                    let giftBox = document.getElementById('giftBox');
+                    giftBox.style.display = 'none';
+                    let container = document.getElementById('container');
+                    container.style.display = 'flex';
+                    container.style.justifyContent = 'space-evenly';
+                    container.style.alignItems = 'center';
+                    let userName = document.getElementById('userName');
+                    userName.innerText = `${user}`;
+                    let secretQuote = document.getElementById('secretQuote');
+                    secretQuote.style.display = 'block';
+                }  
+            }
+        );
+    </script>
+</body>
+</html>

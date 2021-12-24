@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://www.freevector.com/uploads/vector/preview/15095/FreeVector-Christmas-Tree-Background-Vector.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/media/IMG_20211223_143118.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: entranse;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+@keyframes entranse {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+}
+button:hover{
+    transition-duration: 1s;
+    background-color: rgb(8, 177, 140);
+}
+#present{
+    animation-name: presentGlow;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes presentGlow {
+    0%{
+        width: 100px;
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.4;
+        width: 90px;
+    }
+    50%{
+        width: 110px;
+        opacity: 0.9;
+    }
+    75%{
+        width: 80px;
+        opacity: 0.2;
+    }
+    100%{
+        width: 120px;
+        opacity: 1;
+    }
+}
+#giftBox{
+    text-align: center;
+    width: 300px;
+    height: 150px;
+}
+article{
+    background-color: rgba(255, 255, 255, 0.473);
+    text-align: center;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    animation: fader 3s ease-in both;
+    box-shadow: 0 0 30px black;
+}
+h1{
+    font-size: 80px;
+    font-family: 'Mountains of Christmas', cursive;
+    animation: h1Dance 5s infinite ease-in-out both;
+}
+@keyframes h1Dance {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        color: yellow;
+        opacity: 1;
+        text-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    20%{
+        
+        opacity: 0;
+    }
+    30%{
+        color: purple;
+        opacity: 1;
+        text-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    40%{
+        
+        opacity: 0;
+    }
+    50%{
+        color: red, ;
+        opacity: 1;
+        text-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        color: green;
+        opacity: 1;
+        text-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    80%{
+        opacity: 0;
+    }
+    90%{
+        color: gold;
+        opacity: 1;
+        text-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+h2{
+    font-family: 'Mountains of Christmas', cursive;
+}
+h2 span{
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 50px;
+}
+#userName{
+    font-size: 70px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+h3{
+    font-size: 20px;
+    margin: 10px;
+}
+p{
+    margin: 50px;
+}
+article aside{
+   height: 60px;
+}
+#mcImg{
+    width: 100%;
+}
+#secretQuote{
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: fader;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+@keyframes fader {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+p span{
+    font-weight: bold;
+}
+blockquote{
+    font-size: 18px;
+}

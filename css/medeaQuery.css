@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+    
+    body{
+        background-position: left;
+    }
+    #container{
+        background-position-x: -300px; 
+    }
+    #giftBox{
+        color: white;
+        width: 200px;
+        height: 150px;
+    }
+    article{
+            overflow: hidden;
+            text-align: center;
+            margin: auto;
+            border-radius: none;
+            backdrop-filter: blur(6px);
+    }
+    article aside{
+        height: 200px;
+        overflow: hidden;
+        margin: 10px;
+     }
+    h1{
+        font-size: 40px;
+        margin: 10px;
+    }
+    p{
+        font-size: 12px;
+        margin: 10px;
+    }
+    p span{
+        font-weight: bold;
+    }
+    blockquote{
+        font-size: 12px;
+    }
+}
